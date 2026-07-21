@@ -1,0 +1,296 @@
+
+/*可変色設定以上*/
+:root{
+    --bg: #e89999;
+    --surface: #ffe2da;
+    --header: #f0f0f0;
+    --btn: #de7c7c;
+    --text: #662020;
+}
+
+body.blue {
+    --bg: #BAD5F6;
+    --surface: #E1F0FF;
+    --header: #f0f0f0;
+    --btn: #81A2CB;
+    --text: #122950;
+}
+
+body.yellow {
+    --bg: #e9e07d;
+    --surface: #F2F0CB;
+    --header: #f0f0f0;
+    --btn: #B9A96D;
+    --text: #574f23;
+}
+
+/*可変色設定以上*/
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: #FFF;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 450px;
+}
+
+main{
+    margin: 0 10px 0 10px;
+}
+
+
+/*音声関連*/
+.playlist-container {
+    margin: 10px auto;/*下にも多分ちょっと入ってるから、次の要素との繋ぎによって設定を変えるといいでしょう（3Dにoutline系を入れたままにするならmargin消した方がいい）*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* プレイヤー同士の隙間 */
+    background-color: #FFF;
+}
+
+    /* 💡 個々のプレイヤーの枠組み */
+.player-item {
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    /* 再生ボタンの基本形 */
+.play-btn {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #6b7280; /* JSで書き換わる前の基本色 */
+    flex-shrink: 0;
+}
+
+    /* 💡 波形を表示する器（長方形の海苔バー用） */
+.waveform-container {
+    flex-grow: 1;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/*音声関連以上*/
+
+
+/*3Dモデル*/
+model-viewer {
+    width: 100% !important;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+    background-color: #FFF;
+    outline: solid 3px #19536c;
+}
+
+
+/*ヘッダー*/
+header{
+    position: sticky;
+    background-color: #FFF;
+    color: #000;
+    box-sizing: border-box;
+    height: 60px;
+    top: 0;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #649bc7, #0d3545);
+    border-image-slice: 1;
+}
+
+.header-button{
+    justify-content: flex-end;
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    font-size: 14px;
+}
+
+[id^=btn]{
+    background-color: #c7dff2;
+    border: #0d3545 solid 1.5px;
+    border-radius: 5px;
+    color: #0d3545;
+    padding: 5px;
+
+}
+/*ヘッダー以上*/
+
+
+/*ページトップの文言*/
+.hello-message p{
+    text-align: center;
+    margin-top: 10px;
+}
+/*ページトップの文言以上*/
+
+/*3Dパートのスクショ*/
+#butai{
+    max-width: 100%;
+}
+#kyaku{
+    max-width: 100%;
+    margin-top: 10px;
+}
+/*3Dパートのスクショ以上*/
+
+/*動画*/
+video{
+    max-width: 100%;
+}
+/*動画以上*/
+
+/*イラスト*/
+#nou_nou{
+    max-width: 100%;
+}
+/*イラスト以上*/
+
+h1{
+    text-align: center;
+    margin: 20px auto 10px auto;
+    color: #19536c;
+}
+
+h2{
+    margin: 10px auto 5px auto;
+    color: #387189;
+}
+
+h3{
+    font-size: 20px;
+    color: #5995af;
+}
+
+#hidari{
+    margin-left: 20px;
+}
+
+hr{
+    height: 3px;
+    border: none;
+    background: linear-gradient(to right, #649bc7, #0d3545);
+}
+
+/*ヘッダーボタンでジャンプする先(h1)の位置調整*/
+#kako{
+    scroll-margin-top: 80px;
+}
+
+#ongaku{
+    scroll-margin-top: 80px;
+}
+
+#naiyo{
+    scroll-margin-top: 80px;
+}
+/*ボタンジャンプ位置調整以上*/
+
+/*おすすめ曲を埋め込む設定*/
+.tube iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0,0.2);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.kyokumei{
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*おすすめ曲を埋め込む設定以上*/
+
+
+/*自己紹介の注釈*/
+#chushaku{
+    font-size: 12px;
+    color: #555;
+    margin-top: 3px;
+}
+
+#jikosho{
+    margin-bottom: 0px;
+}
+
+/**/
+
+/*心理学で興味ある分野*/
+.sinri{
+    display: flex;
+    gap: 5px;
+    align-items: stretch;   
+}
+
+.sinri a{
+    font-size: 13px;
+    width: 100%;
+}
+
+[id^=kansin]{
+    display: flex;
+    
+    flex: 1;
+    align-items: center;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+}
+
+#kansin_1{
+    color: #fff;
+    background-color: #6897e5;
+}
+#kansin_2{
+    background-color: #FFF;
+    color: #50a63a;
+    border: solid 1.8px #50a63a;
+
+}
+#kansin_3{
+    background-color: #4a91c4;
+    color: #FFF;
+}
+
+
+[id^=kansin] p{
+    margin: auto;
+}
+
+
+
+.shosai{
+    margin-left: 10px;
+}
+
+.shosai p{
+    margin-top: -15px;
+}
+
+/*心理学で興味ある分野以上*/
+
+
+.center{
+    text-align: center;
+}
+
